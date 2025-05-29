@@ -48,6 +48,7 @@ exports.getPerfil = async (req, res) => {
     );
 
     if (result.length === 0) {
+      console.log('Empresa não encontrada.');
       return res.status(404).json({ mensagem: 'Empresa não encontrada.' });
     }
 
